@@ -1,6 +1,6 @@
-# Calculator
+# Hamilton Clone
 
-A calculator build with flutter with UI resembling that of One Plus. 
+An app build with flutter with UI resembling that of Hamilton App. 
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 ## How to run
 
 ```
-$ git clone https://github.com/anvaymishra1/Calculator.git
+$ git clone https://github.com/anvaymishra1/Hamilton_Clone.git
 ```
 
 [Install flutter](flutter.dev)
