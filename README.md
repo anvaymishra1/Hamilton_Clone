@@ -23,7 +23,7 @@ $ git clone https://github.com/anvaymishra1/Hamilton_Clone.git
 
 [Install flutter](flutter.dev)
 
-Change directory to Calculator Folder.
+Change directory to Hamilton_Clone Folder.
 
 connect your mobile device or emulator.
 
