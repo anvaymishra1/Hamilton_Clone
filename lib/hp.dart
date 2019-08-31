@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
               title: Text("TODAY"),
               leading: Icon(Icons.close),
               onTap: () {
+                Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => HomePage()));
               }),
@@ -35,6 +36,7 @@ class _HomePageState extends State<HomePage> {
               title: Text("LOTTERY"),
               leading: Icon(Icons.album),
               onTap: () {
+                // Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => Lottery()));
               }),
@@ -93,7 +95,8 @@ class _HomePageState extends State<HomePage> {
                   centerTitle: true,
                   title: Text(
                     "\nHAMILTON TODAY",
-                    style: TextStyle(fontSize: 25, fontStyle: FontStyle.italic),
+                    style: TextStyle(fontSize: 25, fontStyle: FontStyle.italic,color: Colors.black),
+                    
                   ),
                 ),
                 backgroundColor: Colors.orange[100],
@@ -115,6 +118,7 @@ class _HomePageState extends State<HomePage> {
           ];
         },
         body: Container(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -130,8 +134,7 @@ class _HomePageState extends State<HomePage> {
                             Text("LOTTERY"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -140,8 +143,7 @@ class _HomePageState extends State<HomePage> {
                             Text("TRIVIA"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -150,8 +152,7 @@ class _HomePageState extends State<HomePage> {
                             Text("KARAOKE"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -160,8 +161,7 @@ class _HomePageState extends State<HomePage> {
                             Text("#HAMCAM"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -170,8 +170,7 @@ class _HomePageState extends State<HomePage> {
                             Text("STICKERS"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -180,8 +179,7 @@ class _HomePageState extends State<HomePage> {
                             Text("MERCH"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                       MaterialButton(
                         child: Column(
@@ -190,22 +188,145 @@ class _HomePageState extends State<HomePage> {
                             Text("NEWS"),
                           ],
                         ),
-                        onPressed: (){},
-                        
+                        onPressed: () {},
                       ),
                     ],
                   ),
                 ),
-                
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Card(
+                    child: InkWell(
+                      splashColor: Colors.orange,
+                      onTap: () {
+                        print('card tapped');
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        width: 600,
+                        height: 500,
+                        child:
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: <Widget>[
+                              Image.network("https://images.unsplash.com/photo-1521032078283-ca2eb1773c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+                              fit: BoxFit.fitWidth,
+                               width: 600,
+                               height: 450,
+                              ),
+                               Padding(
+                                 padding: const EdgeInsets.all(12.0),
+                                 child: Text("Sample data 2"),
+                               ),
+                              ]
+                              ),
+                      ),
+                    ),
+                    elevation: 0.1,
+                    color: Colors.transparent,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Card(
+                    child: InkWell(
+                      splashColor: Colors.orange,
+                      onTap: () {
+                        print('card tapped');
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        width: 600,
+                        height: 500,
+                        child:
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: <Widget>[
+                              Image.network("https://source.unsplash.com/random",
+                              fit: BoxFit.fitWidth,
+                               width: 600,
+                               height: 450,
+                              ),
+                               Padding(
+                                 padding: const EdgeInsets.all(12.0),
+                                 child: Text("Sample data 2"),
+                               ),
+                              ]
+                              ),
+                      ),
+                    ),
+                    elevation: 0.1,
+                    color: Colors.transparent,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Card(
+                    child: InkWell(
+                      splashColor: Colors.orange,
+                      onTap: () {
+                        print('card tapped');
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        width: 600,
+                        height: 80,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Icon(Icons.call),
+                            Icon(Icons.face),
+                            Icon(Icons.photo_camera),
+                            Icon(Icons.play_circle_filled),
+                          ],
+                        ),
+                      ),
+                    ),
+                    elevation: 0.1,
+                    color: Colors.transparent,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Card(
+                    child: InkWell(
+                      splashColor: Colors.orange,
+                      onTap: () {
+                        print('card tapped');
+                      },
+                      child: Container(
+                        color: Colors.white,
+                        width: 600,
+                        height: 500,
+                        child:
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: <Widget>[
+                              Image.network("https://images.unsplash.com/photo-1558032040-b55d2adb9745?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+                              fit: BoxFit.fitWidth,
+                               width: 600,
+                               height: 450,
+                              ),
+                               Padding(
+                                 padding: const EdgeInsets.all(12.0),
+                                 child: Text("Sample data 2"),
+                               ),
+                              ]
+                              ),
+                      ),
+                    ),
+                    elevation: 0.1,
+                    color: Colors.transparent,
+                  ),
+                ),
               ],
-            
             ),
-            decoration: BoxDecoration(
-                gradient: RadialGradient(
-                    colors: [Colors.white, Colors.orange[300]],
-                    focalRadius: 400,
-                    radius: 2.5)),
-          
+          ),
+          decoration: BoxDecoration(
+              gradient: RadialGradient(
+                  colors: [Colors.white, Colors.orange[300]],
+                  focalRadius: 400,
+                  radius: 2.5)),
         ),
       ),
     );
