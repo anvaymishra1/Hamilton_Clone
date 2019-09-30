@@ -217,9 +217,13 @@ class _LotteryStateSt extends State<LotterySt> {
                     width: 600.0,
                     child: GoogleMap(
                       onMapCreated: _onMapCreated,
+                      zoomGesturesEnabled: true,
+                      scrollGesturesEnabled: true,
+                      rotateGesturesEnabled: true,
+                      compassEnabled: true,
                       initialCameraPosition: CameraPosition(
                         target: _bho,
-                        zoom: 11.0,
+                        zoom: 11.0,  
                       ),
                     ),
                   ),)
