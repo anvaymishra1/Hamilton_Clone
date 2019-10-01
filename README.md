@@ -2,6 +2,10 @@
 
 An app build with flutter with UI resembling that of Hamilton App. 
 
+## What is Hamilton App?
+
+Hamilton: An American Musical is the most popular Broadway production in recent memory, and now it's coming to your phone -- beyond the soundtrack (and mixtape) you've had on repeat the last two years. Hamilton: The Official App has just about everything a fan could ask for including $10 ticket lotteries, a merch store, stickers and updates from Lin-Manuel Miranda himself. And yes, you can even put yourself on the $10 bill or don your favorite Schulyer sister's dress. It's all very zeitgeisty and best of all, available on Android and iOS.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
